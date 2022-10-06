@@ -2,24 +2,28 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package com.mycompany.mavenproject1;
-
-public class Multiplicador {
-    private int resultado;
+import java.util.Scanner;
+public class Multiplicar {
+    public static void main(String[] args) {
+       
+        Scanner teclado= new Scanner(System.in);
+        Mult();
+    }
     
-    public Multiplicador(){
-   resultado=0;   
-}
-     public int multiplicar(){
-    int N1=86;
-    int N2=23;
     
-    resultado=N1*N2;
-    System.out.println("El resultado de la multiplicacion de "+N1+" y "+N2+ " es: "+resultado);
- return resultado;
-     }    
+     public static void Mult(){
+     Scanner teclado = new Scanner(System.in);
+     float num1,num2,multiplica;
+     
+        System.out.println("Ingrese Primer Número:");
+        num1= teclado.nextInt();
+        System.out.println("Ingrese Segundo Número:");
+        num2= teclado.nextInt();
+        multiplica= num1*num2;
+        
+        System.out.println("La Multiplicacion resultante es:" +multiplica);
 }
-
+}
 
 
 
